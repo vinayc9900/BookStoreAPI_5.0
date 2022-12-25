@@ -1,3 +1,4 @@
+using AutoMapper;
 using BookStoreAPI.DBContext;
 using BookStoreAPI.Repository;
 using Microsoft.AspNetCore.Builder;
@@ -33,6 +34,7 @@ namespace BookStoreAPI
             services.AddTransient<IBookRepository, BookRepository>();
             services.AddDbContext<BookStoreContext>(options=>
             options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddAutoMapper(typeof(Startup));
 
         }
 

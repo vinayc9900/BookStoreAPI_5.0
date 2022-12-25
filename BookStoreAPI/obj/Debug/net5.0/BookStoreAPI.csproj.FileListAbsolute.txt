@@ -62,3 +62,5 @@ D:\MVC Practice\BookStoreAPI\BookStoreAPI\obj\Debug\net5.0\BookStoreAPI.genrunti
 D:\MVC Practice\BookStoreAPI\BookStoreAPI\bin\Debug\net5.0\Microsoft.AspNetCore.JsonPatch.dll
 D:\MVC Practice\BookStoreAPI\BookStoreAPI\bin\Debug\net5.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
 D:\MVC Practice\BookStoreAPI\BookStoreAPI\bin\Debug\net5.0\Newtonsoft.Json.Bson.dll
+D:\MVC Practice\BookStoreAPI\BookStoreAPI\bin\Debug\net5.0\AutoMapper.dll
+D:\MVC Practice\BookStoreAPI\BookStoreAPI\bin\Debug\net5.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

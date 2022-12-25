@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "pAV5VAfaDfkL1K9P+rtbzd0Txg4AfW6L+skLXjFDQZZ6Dbre3DorjUMbLhMFWlbyLHN0X/4dVfYR4dQyXhZxcg==",
+  "dgSpecHash": "nSCPzT16h370cOBfKskpDdpEJl+vmFhqRGNxkZk2h708unmAKGCI1Ybvi8ReZQmkeu0WK2/a9QzQCKrnRIDEpA==",
   "success": true,
   "projectFilePath": "D:\\MVC Practice\\BookStoreAPI\\BookStoreAPI\\BookStoreAPI.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\VINAY\\.nuget\\packages\\automapper\\7.0.1\\automapper.7.0.1.nupkg.sha512",
+    "C:\\Users\\VINAY\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\5.0.1\\automapper.extensions.microsoft.dependencyinjection.5.0.1.nupkg.sha512",
     "C:\\Users\\VINAY\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\VINAY\\.nuget\\packages\\microsoft.aspnetcore.jsonpatch\\5.0.3\\microsoft.aspnetcore.jsonpatch.5.0.3.nupkg.sha512",
     "C:\\Users\\VINAY\\.nuget\\packages\\microsoft.aspnetcore.mvc.newtonsoftjson\\5.0.3\\microsoft.aspnetcore.mvc.newtonsoftjson.5.0.3.nupkg.sha512",
@@ -101,6 +103,7 @@
     "C:\\Users\\VINAY\\.nuget\\packages\\system.threading\\4.3.0\\system.threading.4.3.0.nupkg.sha512",
     "C:\\Users\\VINAY\\.nuget\\packages\\system.threading.tasks\\4.3.0\\system.threading.tasks.4.3.0.nupkg.sha512",
     "C:\\Users\\VINAY\\.nuget\\packages\\system.threading.tasks.extensions\\4.3.0\\system.threading.tasks.extensions.4.3.0.nupkg.sha512",
+    "C:\\Users\\VINAY\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512",
     "C:\\Users\\VINAY\\.nuget\\packages\\system.windows.extensions\\4.7.0\\system.windows.extensions.4.7.0.nupkg.sha512",
     "C:\\Users\\VINAY\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\VINAY\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
