@@ -1,7 +1,9 @@
+using BookStoreAPI.DBContext;
 using BookStoreAPI.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -27,8 +29,10 @@ namespace BookStoreAPI
         public void ConfigureServices(IServiceCollection services)
         {
 
-            services.AddControllers();
+            services.AddControllers().AddNewtonsoftJson(); // PATCH
             services.AddTransient<IBookRepository, BookRepository>();
+            services.AddDbContext<BookStoreContext>(options=>
+            options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
         }
 
@@ -40,7 +44,7 @@ namespace BookStoreAPI
                 app.UseDeveloperExceptionPage();
                
             }
-
+           
             app.UseRouting();
 
             app.UseAuthorization();
