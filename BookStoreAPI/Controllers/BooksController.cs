@@ -26,7 +26,7 @@ namespace BookStoreAPI.Controllers
             var books = await _bookRepository.GetAllBooksAsync();
             return Ok(books);
         }
-        [HttpGet("{id}")]
+        [HttpGet("{id:int}")]
         public async Task<IActionResult> GetBookById(int id)
         {
             var book = await _bookRepository.GetBookByIdAsync(id);
@@ -44,14 +44,14 @@ namespace BookStoreAPI.Controllers
             return CreatedAtAction(nameof(GetBookById), new { id = id, controller = "Books" }, id);
         }
 
-        [HttpPut("{id}")] //   http://localhost:43589/api/books/7
+        [HttpPut("{id:int}")] //   http://localhost:43589/api/books/7
         public async Task<IActionResult> UpdateBook([FromBody] BookModel bookmodel, [FromRoute] int id)
         {
             await _bookRepository.UpdateBookAsync(id, bookmodel);
 
             return Ok();
         }
-        [HttpPatch("{id}")] //   http://localhost:43589/api/books/7
+        [HttpPatch("{id:int}")] //   http://localhost:43589/api/books/7
         public async Task<IActionResult> UpdateBookPatch([FromBody] JsonPatchDocument jpmodel, [FromRoute] int id)
         {
             // use below code in Body Section in POSTMAN
@@ -66,7 +66,7 @@ namespace BookStoreAPI.Controllers
 
             return Ok();
         }
-        [HttpDelete("{id}")] //   http://localhost:43589/api/books/7
+        [HttpDelete("{id:int}")] //   http://localhost:43589/api/books/7
         public async Task<IActionResult> DeleteBookById([FromRoute] int id)
         {
             await _bookRepository.DeleteBookByIdAsync(id);

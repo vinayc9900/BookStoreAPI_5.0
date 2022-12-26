@@ -27,7 +27,6 @@ namespace BookStoreAPI.Repository
             //    Id = x.Id,
             //    Title = x.Title,
             //    Description = x.Description
-
             //}).ToListAsync();
             //return books;
             var books = await _bookStoreContext.Books.ToListAsync();
@@ -40,11 +39,10 @@ namespace BookStoreAPI.Repository
             //    Id = x.Id,
             //    Title = x.Title,
             //    Description = x.Description
-
             //}).FirstOrDefaultAsync();
             // return books;
             var book = await _bookStoreContext.Books.FindAsync(id);
-            return _mapper.Map<BookModel>(book);
+            return _mapper.Map<BookModel>(book); 
 
         }
         public async Task<int> AddBookAsync(BookModel bookModel)
