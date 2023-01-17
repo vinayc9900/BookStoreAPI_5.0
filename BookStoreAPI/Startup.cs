@@ -34,7 +34,7 @@ namespace BookStoreAPI
             services.AddTransient<IBookRepository, BookRepository>();
             services.AddDbContext<BookStoreContext>(options=>
             options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
-            services.AddAutoMapper(typeof(Startup));
+            services.AddAutoMapper(typeof(Startup)); // AutoMapping  Object types
 
         }
 

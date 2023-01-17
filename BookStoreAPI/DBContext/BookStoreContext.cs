@@ -13,7 +13,6 @@ namespace BookStoreAPI.DBContext
         {
 
         }
-
         public DbSet<Books> Books { get; set; }
     }
 }

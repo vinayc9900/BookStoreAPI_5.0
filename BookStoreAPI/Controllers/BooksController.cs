@@ -1,4 +1,5 @@
-﻿using BookStoreAPI.Models;
+﻿using BookStoreAPI.Filters;
+using BookStoreAPI.Models;
 using BookStoreAPI.Repository;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.JsonPatch;
@@ -21,10 +22,16 @@ namespace BookStoreAPI.Controllers
             _bookRepository = bookRepository;
         }
         [HttpGet("")]
+        [ResourceFilter]  //Adding Filter
+        [ResourceFilter2]  //Adding Filter
+        [CustomActionFilter] //Adding Filter
         public async Task<IActionResult> GetAllBooks()
         {
+            Console.WriteLine("Before Index");
+
             var books = await _bookRepository.GetAllBooksAsync();
             return Ok(books);
+           
         }
         [HttpGet("{id:int}")]
         public async Task<IActionResult> GetBookById(int id)
